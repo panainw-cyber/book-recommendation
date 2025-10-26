@@ -1,0 +1,188 @@
+/* ---------------------------------------------------
+   🔹 FONT & BASE STYLE
+--------------------------------------------------- */
+body {
+  font-family: 'Mitr', 'K2D', sans-serif;
+  color: #2c2c2c;
+  background-color: #f9f9f9;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #3b2f2f;
+  font-weight: 600;
+}
+
+p,li {
+  font-size: 1.05rem;
+}
+
+/* ---------------------------------------------------
+   🔹 NAVBAR
+--------------------------------------------------- */
+.navbar {
+  background-color: #4e342e;
+  /* สีน้ำตาลเข้ม */
+}
+
+.navbar-brand img {
+  border-radius: 5px;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffca28 !important;
+  /* สีทองเมื่อ hover */
+  text-decoration: underline;
+}
+
+.white-text {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+/* ---------------------------------------------------
+   🔹 HERO SECTION
+--------------------------------------------------- */
+.brown-text {
+  color: #5d4037;
+  font-weight: 700;
+}
+
+.font-p {
+  font-family: 'K2D', sans-serif;
+  font-size: 1.05rem;
+}
+
+.background {
+  background: linear-gradient(to bottom, #fff, #f5f5f5);
+  padding-bottom: 3rem;
+}
+
+/* ---------------------------------------------------
+   🔹 LINE DIVIDER (Section Divider)
+--------------------------------------------------- */
+.line-divider {
+  border-top: 2px #e0e0e0 ;
+  padding-top: 3rem;
+  margin-top: 4rem;
+}
+
+/* ---------------------------------------------------
+   🔹 CONTAINER & CONTENT AREA
+--------------------------------------------------- */
+.container h2,
+.container h4 {
+  color: #4e342e;
+}
+
+.font-ul {
+  list-style-type: "📘 ";
+  padding-left: 1.5rem;
+}
+
+/* ---------------------------------------------------
+   🔹 CAROUSEL (Video Content)
+--------------------------------------------------- */
+#carouselExample {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel-item iframe {
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(78, 52, 46, 0.8);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+/* ---------------------------------------------------
+   🔹 ACCORDION SECTION (Bootstrap Component)
+--------------------------------------------------- */
+.accordion-button {
+  background-color: #6d4c41;
+  color: #fff;
+  font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #5d4037;
+  color: #ffca28;
+}
+
+.accordion-body {
+  background-color: #fdfdfd;
+  font-size: 1rem;
+}
+
+/* ---------------------------------------------------
+   🔹 FOOTER / LINK
+--------------------------------------------------- */
+a {
+  color: #6d4c41;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d4a373;
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------------
+   🔹 RESPONSIVE DESIGN
+--------------------------------------------------- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand img {
+    width: 40px;
+  }
+
+  .carousel-item iframe {
+    height: auto;
+  }
+
+  .font-p {
+    font-size: 1rem;
+  }
+
+  .line-divider {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .font-ul {
+    padding-left: 1rem;
+  }
+
+  #carouselExample {
+    max-width: 100%;
+  }
+}
