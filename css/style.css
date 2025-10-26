@@ -1,125 +1,188 @@
-/* div {
-  border: 2px solid purple;
-} */
-
-h1,h2,h3,h4 {
-  font-family: 'Mitr';
-  font-style: normal;
-  font-weight: 400;
-  color: #914F1E;
-  /* กำหนดสีตัวอักษรเป็น #914F1E */
+/* ---------------------------------------------------
+   🔹 FONT & BASE STYLE
+--------------------------------------------------- */
+body {
+  font-family: 'Mitr', 'K2D', sans-serif;
+  color: #2c2c2c;
+  background-color: #f9f9f9;
+  line-height: 1.7;
 }
 
-.brown-text {
-  color: #914F1E;
-  /* ทำให้ตัวอักษรในคลาสนี้เป็นสีขาว */
-  padding-top: 150px;
-}
-
-.line-divider {
-  position: relative;
-  padding-top: 20px; /* เว้นระยะระหว่างเส้นกับข้อความ */
-}
-
-.line-divider::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 300px;                 /* เว้นด้านซ้าย */
-  right: 300px;                /* เว้นด้านขวา */
-  height: 3px;                /* ขนาดเส้น */
-  background-color: #914F1E;  /* สีของเส้น */
-}
-
-
-.white-text {
-  color: #ffffff;
-  /* ทำให้ตัวอักษรในคลาสนี้เป็นสีขาว */
-}
-
-p {
-  font-family: 'K2D';
-  font-style: normal;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.font-p {
-  font-family: 'K2D';
-  font-style: normal;
-  font-weight: 400;
-  color: #914F1E
-}
-
-.font-ul {
-  font-family: 'K2D';
-  font-style: normal;
-  font-weight: 400;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-* ตั้งค่าความห่างระหว่างข้อความใน container */ .container p,
-.container ul {
-  line-height: 1.8;
-  /* เพิ่มระยะห่างระหว่างบรรทัด */
-}
-
-/* ทำให้หัวข้อ h2 มีการเน้น */
-h2 {
-  font-size: 2rem;
+h1,
+h2,
+h3,
+h4 {
+  color: #3b2f2f;
   font-weight: 600;
-  color: #914F1E;
 }
 
-/* ทำให้ iframe ใน YouTube responsive */
-iframe {
-  width: 100%;
-  height: 315px;
-  /* ความสูงของ iframe */
+p,li {
+  font-size: 1.05rem;
 }
 
-/* สไตล์สำหรับ navbar */
+/* ---------------------------------------------------
+   🔹 NAVBAR
+--------------------------------------------------- */
 .navbar {
-  background-color: #914F1E;
-  /* สีพื้นหลังของ navbar */
-}
-
-.navbar-nav .nav-link {
-  color: #ffffff !important;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #F7DCB9 !important;
-  /* สีเมื่อเมาส์ไปอยู่ที่ลิงก์ */
+  background-color: #4e342e;
+  /* สีน้ำตาลเข้ม */
 }
 
 .navbar-brand img {
-  max-width: 50px;
+  border-radius: 5px;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffca28 !important;
+  /* สีทองเมื่อ hover */
+  text-decoration: underline;
+}
+
+.white-text {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+/* ---------------------------------------------------
+   🔹 HERO SECTION
+--------------------------------------------------- */
+.brown-text {
+  color: #5d4037;
+  font-weight: 700;
+}
+
+.font-p {
+  font-family: 'K2D', sans-serif;
+  font-size: 1.05rem;
 }
 
 .background {
-  background: #F7DCB9;
-  background: linear-gradient(1deg, rgba(247, 220, 185, 1) 0%, rgba(253, 187, 45, 1) 100%);
-
+  background: linear-gradient(to bottom, #fff, #f5f5f5);
+  padding-bottom: 3rem;
 }
 
-body {
-  background-color: #F7DCB9;
+/* ---------------------------------------------------
+   🔹 LINE DIVIDER (Section Divider)
+--------------------------------------------------- */
+.line-divider {
+  border-top: 2px #e0e0e0 ;
+  padding-top: 3rem;
+  margin-top: 4rem;
 }
 
-/* body {
-      background-color: #F9F5F0;
-    } */
+/* ---------------------------------------------------
+   🔹 CONTAINER & CONTENT AREA
+--------------------------------------------------- */
+.container h2,
+.container h4 {
+  color: #4e342e;
+}
 
+.font-ul {
+  list-style-type: "📘 ";
+  padding-left: 1.5rem;
+}
 
+/* ---------------------------------------------------
+   🔹 CAROUSEL (Video Content)
+--------------------------------------------------- */
+#carouselExample {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-/* gray-background {
-      background-color: #eeeeec;
-    } */
-/* .shadow-right {
-    box-shadow: 8px 0 10px rgba(0, 0, 0, 0.2);
-  } */
+.carousel-item iframe {
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(78, 52, 46, 0.8);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+/* ---------------------------------------------------
+   🔹 ACCORDION SECTION (Bootstrap Component)
+--------------------------------------------------- */
+.accordion-button {
+  background-color: #6d4c41;
+  color: #fff;
+  font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #5d4037;
+  color: #ffca28;
+}
+
+.accordion-body {
+  background-color: #fdfdfd;
+  font-size: 1rem;
+}
+
+/* ---------------------------------------------------
+   🔹 FOOTER / LINK
+--------------------------------------------------- */
+a {
+  color: #6d4c41;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d4a373;
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------------
+   🔹 RESPONSIVE DESIGN
+--------------------------------------------------- */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand img {
+    width: 40px;
+  }
+
+  .carousel-item iframe {
+    height: auto;
+  }
+
+  .font-p {
+    font-size: 1rem;
+  }
+
+  .line-divider {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .font-ul {
+    padding-left: 1rem;
+  }
+
+  #carouselExample {
+    max-width: 100%;
+  }
+}
